@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Multi-Speciality Clinic | Khammam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-hospital me-2"></i> Apex Clinic Khammam
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Treatments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold text-dark" href="#book-section">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Quality Healthcare Right in Khammam</h1>
+            <p class="lead">General Medicine, Advanced Dental Care, Diagnostics & Pediatrics.</p>
+            <a href="#book-section" class="btn btn-lg btn-success mt-3 shadow">
+                <i class="fa-brands fa-whatsapp me-2"></i> Instant Booking via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Doctors Directory -->
+    <section id="doctors" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Specialist Doctors</h2>
+                <p class="text-muted">Experienced doctors available for consultation daily</p>
+            </div>
+            <div class="row g-4">
+                <!-- Doctor 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 doctor-card">
+                        <div class="card-body text-center p-4">
+                            <div class="avatar mb-3">
+                                <i class="fa-solid fa-user-doctor fa-4x text-primary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Dr. Rajesh Kumar, MBBS, MD</h5>
+                            <p class="badge bg-primary">General Physician</p>
+                            <p class="text-muted small">Specialized in diabetes management, fever, BP, and preventive care.</p>
+                            <div class="alert alert-info py-2 small mb-3">
+                                <i class="fa-regular fa-clock me-1"></i> Mon - Sat: 10:00 AM - 02:00 PM
+                            </div>
+                            <button class="btn btn-outline-primary w-100 select-doc-btn" 
+                                    data-doctor="Dr. Rajesh Kumar" 
+                                    data-speciality="General Physician">
+                                Select & Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 doctor-card">
+                        <div class="card-body text-center p-4">
+                            <div class="avatar mb-3">
+                                <i class="fa-solid fa-tooth fa-4x text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Dr. Swathi Reddy, BDS, MDS</h5>
+                            <p class="badge bg-info text-dark">Chief Dental Surgeon</p>
+                            <p class="text-muted small">Expert in painless root canal, braces, teeth whitening, and implants.</p>
+                            <div class="alert alert-info py-2 small mb-3">
+                                <i class="fa-regular fa-clock me-1"></i> Mon - Sat: 04:00 PM - 08:30 PM
+                            </div>
+                            <button class="btn btn-outline-primary w-100 select-doc-btn" 
+                                    data-doctor="Dr. Swathi Reddy" 
+                                    data-speciality="Chief Dental Surgeon">
+                                Select & Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 doctor-card">
+                        <div class="card-body text-center p-4">
+                            <div class="avatar mb-3">
+                                <i class="fa-solid fa-baby fa-4x text-warning"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Dr. K. Srinivas Rao, MBBS, DCH</h5>
+                            <p class="badge bg-warning text-dark">Pediatrician (Child Specialist)</p>
+                            <p class="text-muted small">Child vaccinations, growth tracking, seasonal flu, and newborn care.</p>
+                            <div class="alert alert-info py-2 small mb-3">
+                                <i class="fa-regular fa-clock me-1"></i> Daily: 05:00 PM - 09:00 PM
+                            </div>
+                            <button class="btn btn-outline-primary w-100 select-doc-btn" 
+                                    data-doctor="Dr. K. Srinivas Rao" 
+                                    data-speciality="Pediatrician">
+                                Select & Book
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Treatments -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Treatments & Diagnostic Services</h2>
+                <p class="text-muted">Modern equipment with hygienic protocols</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded shadow-sm">
+                        <i class="fa-solid fa-tooth fa-2x text-primary mb-2"></i>
+                        <h6>Root Canal & Braces</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded shadow-sm">
+                        <i class="fa-solid fa-heart-pulse fa-2x text-danger mb-2"></i>
+                        <h6>ECG & Blood Tests</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded shadow-sm">
+                        <i class="fa-solid fa-syringe fa-2x text-success mb-2"></i>
+                        <h6>Child Immunizations</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border rounded shadow-sm">
+                        <i class="fa-solid fa-flask-vial fa-2x text-warning mb-2"></i>
+                        <h6>Complete Health Check</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Booking Section -->
+    <section id="book-section" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4 text-dark shadow-lg rounded-3">
+                        <h3 class="fw-bold text-center mb-3">Book Your Instant Appointment</h3>
+                        <p class="text-center text-muted small">You will get a direct instant confirmation alert on WhatsApp.</p>
+                        
+                        <form id="appointmentForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Patient Name *</label>
+                                    <input type="text" id="patientName" class="form-control" placeholder="e.g. Ramesh Reddy" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">WhatsApp Mobile Number *</label>
+                                    <input type="tel" id="patientPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Doctor *</label>
+                                    <select id="doctorSelect" class="form-select" required>
+                                        <option value="" disabled selected>Choose Doctor</option>
+                                        <option value="Dr. Rajesh Kumar" data-dept="General Physician">Dr. Rajesh Kumar (General Physician)</option>
+                                        <option value="Dr. Swathi Reddy" data-dept="Chief Dental Surgeon">Dr. Swathi Reddy (Dental Specialist)</option>
+                                        <option value="Dr. K. Srinivas Rao" data-dept="Pediatrician">Dr. K. Srinivas Rao (Pediatrician)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Speciality/Department</label>
+                                    <input type="text" id="specialityInput" class="form-control" readonly placeholder="Auto-filled">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Select Date *</label>
+                                    <input type="date" id="bookingDate" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Select Time Slot *</label>
+                                    <select id="bookingTime" class="form-select" required>
+                                        <option value="" disabled selected>Choose Time Slot</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:30 AM">11:30 AM</option>
+                                        <option value="01:00 PM">01:00 PM</option>
+                                        <option value="05:00 PM">05:00 PM</option>
+                                        <option value="06:30 PM">06:30 PM</option>
+                                        <option value="08:00 PM">08:00 PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Problem / Symptoms (Optional)</label>
+                                    <textarea id="patientNotes" class="form-control" rows="2" placeholder="e.g. Tooth ache since 2 days / Viral fever"></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-success btn-lg w-100 shadow fw-bold">
+                                        <i class="fa-brands fa-whatsapp me-2"></i> Confirm & Send WhatsApp Alert
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Reviews -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Local Khammam Patients Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm h-100">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted">"Dr. Swathi dental clinic treatment was completely painless. Clean hygiene and very affordable rates in Khammam."</p>
+                        <h6 class="fw-bold mb-0">- V. Krishna, Wyra Road</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm h-100">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted">"WhatsApp confirmation booking makes it very easy. No need to wait for hours in the waiting room."</p>
+                        <h6 class="fw-bold mb-0">- Anitha M., Rotary Nagar</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm h-100">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted">"Dr. Rajesh diagnosed my father's diabetes problem accurately. Best multi-speciality setup near bus stand."</p>
+                        <h6 class="fw-bold mb-0">- S. Naresh, Mamillagudem</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Location & Contact -->
+    <section id="location" class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-3">Apex Multi-Speciality Clinic</h3>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot text-danger me-2"></i> Opp. ZP Center, Near Old Bus Stand, Wyra Road, Khammam, Telangana - 507001</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone text-primary me-2"></i> +91 98765 43210 / 08742-223344</p>
+                    <p class="mb-3"><i class="fa-solid fa-clock text-success me-2"></i> Open: Monday to Saturday (9:00 AM - 9:00 PM)</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary">
+                        <i class="fa-solid fa-diamond-turn-right me-1"></i> Open in Google Maps
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <!-- Embedded Responsive Map for Khammam Central -->
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60927.91500057039!2d80.11796120807532!3d17.247253549641477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35368a520f86d9%3A0xe54d5883d6a13d75!2sKhammam%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0 small">&copy; 2026 Apex Multi-Speciality Clinic, Khammam. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
